@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>MusicHub</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!-- CSS -->
+	<link rel="stylesheet" href="assets/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="assets/rs-plugin/css/settings.css" media="screen" />
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+	<!-- jQuery -->
+	<script type="text/javascript" src="assets/js/jquery.js"></script>
+	<script type="text/javascript" src="assets/js/modernizr.custom.js"></script>
+</head>
+<body>
+	<!-- Preloader -->
+	<div id="preloader">
+		<div id="loadanimation"></div>
+	</div>
+
+	<!-- Navigation Bar -->
+	<nav class="navbar navbar-default" role="navigation">
+	  	<div class="container">
+		    <!-- Brand and toggle get grouped for better mobile display -->
+		    <div class="navbar-header">
+			    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+			    	<span class="sr-only">Toggle navigation</span>
+			    	<span class="icon-bar"></span>
+			    	<span class="icon-bar"></span>
+			    	<span class="icon-bar"></span>
+			    </button>
+			    <a class="navbar-brand" href="index.html"><i class="flaticon-music170"></i> HYDROX <span class="colored">MUZIK</span></a>
+		    </div>
+
+		    <!-- Collect the nav links, forms, and other content for toggling -->
+		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+		    	<!-- Search Form -->
+		    	<form class='search-container'>
+			        <input placeholder='Search...' type='text'>
+			        <button class='button' type="submit">
+			        	<i class='icon-search'></i>
+			        </button>
+			    </form>
+
+				<!-- Navigation links -->
+		      	<ul class="nav navbar-nav">
+		      		<!-- Home -->
+		      		<li class="dropdown">
+		          		<a class="selected dropdown-toggle" data-toggle="dropdown" href="#">HOME <i class="icon-down-open"></i></a>
+			          	<ul class="dropdown-menu" role="menu">
+			            	<li><a href="index.html">Version style full</a></li>
+			            	<li><a href="index-boxed.html">Version style boxed</a></li>
+			          	</ul>
+		        	</li>
+					<!-- Event -->
+		        	<li class="dropdown">
+		          		<a class="dropdown-toggle" data-toggle="dropdown" href="#">EVENT <i class="icon-down-open"></i></a>
+			          	<ul class="dropdown-menu" role="menu">
+			            	<li><a href="event-list-month.html">Event list with month</a></li>
+			            	<li><a href="event-list.html">Event simple list</a></li>
+			            	<li><a href="event-gallery.html">Event style gallery</a></li>
+			            	<li><a href="event-single.html">Single event</a></li>
+			          	</ul>
+		        	</li>
+					<!-- Album -->
+		        	<li class="dropdown">
+		          		<a class="dropdown-toggle" data-toggle="dropdown" href="#">ALBUM <i class="icon-down-open"></i></a>
+			          	<ul class="dropdown-menu" role="menu">
+			            	<li><a href="album-1.html">Album style 1</a></li>
+			            	<li><a href="album-2.html">Album style 2</a></li>
+			            	<li><a href="album-single.html">Single album</a></li>
+			          	</ul>
+		        	</li>
+					<!-- Shop -->
+		        	<li class="dropdown">
+		          		<a class="dropdown-toggle" data-toggle="dropdown" href="#">SHOP <i class="icon-down-open"></i></a>
+			          	<ul class="dropdown-menu" role="menu">
+			          		<li><a href="shop-home.html">Shop home 1</a></li>
+			            	<li><a href="shop-product.html">Product</a></li>
+			          	</ul>
+		        	</li>
+		        	<!-- Gallery -->
+		        	<li class="dropdown">
+		          		<a class="dropdown-toggle" data-toggle="dropdown" href="#">GALLERY <i class="icon-down-open"></i></a>
+			          	<ul class="dropdown-menu" role="menu">
+			            	<li><a href="gallery.html">Gallery page</a></li>
+			            	<li><a href="inside-album-photo.html">Inside album photo</a></li>
+			            	<li><a href="inside-album-video.html">Inside album video</a></li>
+			          	</ul>
+		        	</li>
+		        	<!-- Pages -->
+		        	<li class="dropdown">
+		          		<a class="dropdown-toggle" data-toggle="dropdown" href="#">PAGES <i class="icon-down-open"></i></a>
+			          	<ul class="dropdown-menu" role="menu">
+			            	<li><a href="404.html">404 page</a></li>
+			            	<li><a href="contact.html">Contact</a></li>
+			            	<li><a href="event-list-month.html">Event</a></li>
+			            	<li><a href="album-1.html">Album</a></li>
+			            	<li><a href="members.html">Members</a></li>
+			            	<li><a href="gallery.html">Gallery</a></li>
+			            	<li><a href="blog-sidebar.html">Blog</a></li>
+			          	</ul>
+		        	</li>
+		        	<!-- Blog -->
+		        	<li class="dropdown">
+		          		<a class="dropdown-toggle" data-toggle="dropdown" href="#">BLOG <i class="icon-down-open"></i></a>
+			          	<ul class="left dropdown-menu" role="menu">
+			            	<li><a href="blog-sidebar.html">Blog with sidebar</a></li>
+			            	<li><a href="blog-masonry.html">Blog style masonry</a></li>
+			            	<li><a href="blog-single.html">Single post</a></li>
+			          	</ul>
+		        	</li>
+		      	</ul>
+	    	</div><!-- /.navbar-collapse -->
+	  	</div><!-- /.container-fluid -->
+	</nav>
+
+	<!-- Slider -->
+	<div class="tp-banner-container">
+		<div class="tp-banner" >
+			<ul>
+				<!-- SLIDE 1 -->
+				<li data-transition="fade"  data-masterspeed="1500" data-slotamount="7">
+					<!-- MAIN IMAGE -->
+					<img src="assets/img/slider/BLACKBACK2.jpg"  alt="slidebg1"  data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
+					<!-- cap 1 -->
+				   	<div class="caption lfl custom-cap cap-1 hidden-xs" data-start="800" data-x="390" data-y="190" data-speed="700" data-easing="">Meet Hard RoQ3</div>
+					<!-- cap 2 -->
+				   	<div class="caption lfl custom-cap cap-2 hidden-xs" data-start="1000" data-x="390" data-y="270" data-speed="700" data-easing="">You can make events and write on blog</div>
+					<!-- cap 3 -->
+					<div class="caption lfl custom-cap cap-2 hidden-xs" data-start="1200" data-x="390" data-y="325" data-speed="700" data-easing="">You can sell albums and songs</div>
+					<!-- cap 4 -->
+					<div class="caption lfl custom-cap cap-2 hidden-xs" data-start="1400" data-x="390" data-y="380" data-speed="700" data-easing="">You can sell tickets</div>
+					<!-- Button 1 -->
+					<a class="caption lfb custom-button hidden-xs" href="album-single.html" data-start="1600" data-x="390" data-y="470" data-speed="700" data-easing=""><i class="flaticon-play36"></i> PREVIEW</a>
+					<!-- Button 2 -->
+					<a class="caption lfb custom-button colored hidden-xs" href="#" data-start="1800" data-x="565" data-y="470" data-speed="700" data-easing=""><i class="flaticon-grocery6"></i> BUY NOW</a>
+
+					<!-- Album -->
+					<a class="caption lfr album hidden-xs" href="album-single.html" data-start="1000" data-x="1045" data-y="190" data-speed="700" data-easing="">
+						<img src="assets/img/slider/HardRoQ3.jpg" alt="album">
+					</a>
+					<!-- cap 5 -->
+					<div class="caption lfr custom-cap cap-3 hidden-xs" data-start="1200" data-x="1070" data-y="405" data-speed="700" data-easing="">ALBUM</div>
+					<!-- cap 6 -->
+					<div class="caption lfr custom-cap cap-4 hidden-xs" data-start="1300" data-x="1070" data-y="435" data-speed="700" data-easing="">SING WITH ME BABY!
+					<br>
+					<span class="artist">AVICII</span>
+					</div>
+				</li>
+
+				<!-- SLIDE 2 -->
+				<li data-transition="fade" data-masterspeed="1500" data-slotamount="7">
+					<!-- MAIN IMAGE -->
+					<img src="assets/img/slider/BLACKBACK2.jpg"  alt="slidebg1"  data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
+					<div class="caption sfb" data-start="1000" data-x="center" data-y="bottom" data-voffset="150" data-speed="700" data-easing="">
+						<img src="assets/img/slider/profile.jpg" alt="dj">
+					</div>
+					<!-- cap 1 -->
+				   	<div class="caption lfb custom-cap cap-1-1" data-start="1400" data-x="center" data-y="220" data-speed="700" data-easing="">The big <span class="colored">music event</span> of the year</div>
+					<!-- cap 2 -->
+				   	<div class="caption lfb custom-cap cap-2" data-start="1600" data-x="center" data-y="300" data-speed="700" data-easing="">Register now! Grab a seat</div>
+					<!-- cap 3 -->
+					<div class="caption lfb custom-cap cap-2" data-start="1800" data-x="center" data-y="355" data-speed="700" data-easing="">Coming soon on 30 september</div>
+
+					<!-- Button 1 -->
+					<a class="caption lfb custom-button" href="event-single.html" data-start="2000" data-x="center" data-hoffset="-90" data-y="470" data-speed="700" data-easing=""><i class="flaticon-play36"></i> PREVIEW</a>
+					<!-- Button 2 -->
+					<a class="caption lfb custom-button colored" href="#" data-start="2200" data-x="center" data-hoffset="90" data-y="470" data-speed="700" data-easing=""><i class="flaticon-grocery6"></i> BUY NOW</a>
+				</li>
+
+				<!-- SLIDE 3 -->
+				<li data-transition="fade" data-masterspeed="1500" data-slotamount="7">
+					<!-- MAIN IMAGE -->
+					<img src="assets/img/slider/BLACKBACK2.jpg"  alt="slidebg1"  data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
+					<!-- cap 1 -->
+				   	<div class="caption lfl custom-cap cap-1 hidden-xs" data-start="800" data-x="390" data-y="190" data-speed="700" data-easing="">What can you do with MusicBeat?</div>
+					<!-- cap 2 -->
+				   	<div class="caption lfl custom-cap cap-2 hidden-xs" data-start="1000" data-x="390" data-y="270" data-speed="700" data-easing="">You can make events and write on blog</div>
+					<!-- cap 3 -->
+					<div class="caption lfl custom-cap cap-2 hidden-xs" data-start="1200" data-x="390" data-y="325" data-speed="700" data-easing="">You can sell albums and songs</div>
+					<!-- cap 4 -->
+					<div class="caption lfl custom-cap cap-2 hidden-xs" data-start="1400" data-x="390" data-y="380" data-speed="700" data-easing="">You can sell tickets</div>
+					<!-- Button 1 -->
+					<a class="caption lfb custom-button hidden-xs" href="album-single.html" data-start="1600" data-x="390" data-y="470" data-speed="700" data-easing=""><i class="flaticon-play36"></i> PREVIEW</a>
+					<!-- Button 2 -->
+					<a class="caption lfb custom-button colored hidden-xs" href="#" data-start="1800" data-x="565" data-y="470" data-speed="700" data-easing=""><i class="flaticon-grocery6"></i> BUY NOW</a>
+
+					<!-- Album -->
+					<a class="caption lfr album hidden-xs" href="album-single.html" data-start="1000" data-x="1045" data-y="190" data-speed="700" data-easing="">
+						<img src="assets/img/slider/HardRoQ3.jpg" alt="album">
+					</a>
+					<!-- cap 5 -->
+					<div class="caption lfr custom-cap cap-3 hidden-xs" data-start="1200" data-x="1070" data-y="405" data-speed="700" data-easing="">ALBUM</div>
+					<!-- cap 6 -->
+					<div class="caption lfr custom-cap cap-4 hidden-xs" data-start="1300" data-x="1070" data-y="435" data-speed="700" data-easing="">SING WITH ME BABY!
+					<br>
+					<span class="artist">AVICII</span>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<!-- jPlayer -->
+	<div class="player">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<div id="jquery_jplayer_1" class="jp-jplayer"></div>
+
+					<div id="jp_container_1" class="jp-audio">
+						<div class="jp-type-playlist">
+							<div class="jp-playlist">
+								<ul>
+									<li></li>
+								</ul>
+							</div>
+							<div class="jp-gui jp-interface">
+								<div class="toggle">
+									<ul>
+										<li></li>
+										<li></li>
+										<li></li>
+									</ul>
+								</div>
+								<ul class="jp-controls">
+									<li><a href="javascript:;" class="jp-previous" tabindex="1"><i class="flaticon-previous7"></i></a></li>
+									<li><a href="javascript:;" class="jp-play" tabindex="1"><i class="flaticon-play36"></i></a></li>
+									<li><a href="javascript:;" class="jp-pause" tabindex="1"><i class="icon-pause"></i></a></li>
+									<li><a href="javascript:;" class="jp-next" tabindex="1"><i class="flaticon-next9"></i></a></li>
+									<li><a href="javascript:;" class="jp-mute" tabindex="1" title="mute"><i class="flaticon-volume24"></i></a></li>
+									<li><a href="javascript:;" class="jp-unmute" tabindex="1" title="unmute"><i class="flaticon-mute8"></i></a></li>
+								</ul>
+								<!-- <div class="jp-volume-bar">
+									<div class="jp-volume-bar-value"></div>
+								</div> -->
+								<div class="jp-progress">
+									<div class="jp-seek-bar">
+										<div class="jp-play-bar"></div>
+									</div>
+								</div>
+							</div>
+							
+							<div class="jp-no-solution">
+								<span>Update Required</span>
+								To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Latest Albums -->
+	<div class="container latest-albums">
+		<div class="row">
+			<div class="col-sm-12 col-md-4 info">
+				<i class="large-icon flaticon-headphone4"></i>
+				<h2>Recent <span class="colored">Events.</span></h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis consequat magna quis urna convallis suscipit. Nulla facilisi. Phasellus varius vitae diam ultrices lacinia augue.</p>
+				<a href="album-1.html" class="view-all">- VIEW ALL -</a>
+			</div>
+			<div class="col-sm-12 col-md-8 albums">
+				<div class="album">
+					<div class="cover">
+						<img class="img-responsive" src="assets/img/album/show.jpg" alt="cover">
+						<div class="title">ALBUM</div>
+						<div class="artist">ADELE 21 COVER
+						<br />
+						<span class="artist-2">ADELE</span>
+						</div>
+					</div>
+					<div class="info">
+						<a href="album-single.html">Adele 21 Album</a>
+						<p><i class="flaticon-headphone4"></i> Adele - Skyfall</p>
+					</div>
+				</div>
+
+				<div class="album">
+					<div class="cover">
+						<img class="img-responsive" src="assets/img/album/show2.jpg" alt="cover">
+						<div class="title">ALBUM</div>
+						<div class="artist">DRAKE COVER
+						<br />
+						<span class="artist-2">ADELE</span>
+						</div>
+					</div>
+					<div class="info">
+						<a href="album-single.html">Drake Album</a>
+						<p><i class="flaticon-headphone4"></i> Drake - Take Care</p>
+					</div>
+				</div>
+
+				<div class="album last">
+					<div class="cover">
+						<img class="img-responsive" src="assets/img/album/show.jpg" alt="cover">
+						<div class="title">ALBUM</div>
+						<div class="artist">TO BE LOVED COVER
+						<br />
+						<span class="artist-2">MICHAEL BUBLE</span>
+						</div>
+					</div>
+					<div class="info">
+						<a href="album-single.html">To Be Loved Album</a>
+						<p><i class="flaticon-headphone4"></i> Michael Buble - Right</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Line Separator -->
+	<div class="container">
+		<div class="col-sm-12" style="position: relative; height: 140px;">
+			<div class="col-xs-12 line-separator"></div>
+		</div>
+	</div>
+
+	<!-- Event List -->
+	<div class="container event-list-container">
+		<div class="row">
+			<!-- Search Event Form -->
+		    <form class='search-event col-sm-5 col-md-7 col-lg-8'>
+		    	<button class='button' type="submit">
+			    	<i class='icon-search'></i>
+			    </button>
+			    <input placeholder='search event...' type='text'>
+			</form>
+
+			<!-- Sort By -->
+			<nav id="options-1" class="categories-event col-sm-7 col-md-5 col-lg-4">
+                <ul id="filters" data-option-key="filter" class="option-set">
+                    <li>
+                        <a href="#filter" class="selected" data-option-value="*">All</a>
+                    </li>
+                    <li>
+                        <a href="#filter" data-option-value=".available">Available</a>
+                    </li>
+                    <li>
+                        <a href="#filter" data-option-value=".soon">Coming soon</a>
+                    </li>
+                     <li>
+                        <a href="#filter" data-option-value=".sold">Sold out</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- Event List -->
+            <nav class="event-list col-sm-12">
+				<ul id="container-ev-1">
+					<li class="element available">
+						<div class="date"><i class="icon-calendar"></i> 17 SEPTEMBER <span class="separator"></span></div>
+						<div class="artist"><i class="icon-mic-1"></i> MARTIN GARRIX <span class="separator"></span></div>
+						<div class="location"><i class="icon-location-1"></i> NEW ORLEANS, LA</div>
+						<a class="buy" href="event-single.html">BUY NOW</a>
+					</li>
+
+					<li class="element sold">
+						<div class="date"><i class="icon-calendar"></i> 28 SEPTEMBER <span class="separator"></span></div>
+						<div class="artist"><i class="icon-mic-1"></i> NICKY ROMEO <span class="separator"></span></div>
+						<div class="location"><i class="icon-location-1"></i> MEMPHIS, TN</div>
+						<a class="sold" href="event-single.html">SOLD OUT</a>
+					</li>
+
+					<li class="element sold">
+						<div class="date"><i class="icon-calendar"></i> 28 SEPTEMBER <span class="separator"></span></div>
+						<div class="artist"><i class="icon-mic-1"></i> P.DIDDY <span class="separator"></span></div>
+						<div class="location"><i class="icon-location-1"></i> OAKLAND, CA</div>
+						<a class="sold" href="event-single.html">SOLD OUT</a>
+					</li>
+
+					<li class="element available">
+						<div class="date"><i class="icon-calendar"></i> 12 OCTOBER <span class="separator"></span></div>
+						<div class="artist"><i class="icon-mic-1"></i> RIHANNA <span class="separator"></span></div>
+						<div class="location"><i class="icon-location-1"></i> COLUMBIA, SC</div>
+						<a class="buy" href="event-single.html">BUY NOW</a>
+					</li>
+
+					<li class="element available">
+						<div class="date"><i class="icon-calendar"></i> 22 OCTOBER <span class="separator"></span></div>
+						<div class="artist"><i class="icon-mic-1"></i> ADELE <span class="separator"></span></div>
+						<div class="location"><i class="icon-location-1"></i> NEW ORLEANS, LA</div>
+						<a class="buy" href="event-single.html">BUY NOW</a>
+					</li>
+
+					<li class="element sold">
+						<div class="date"><i class="icon-calendar"></i> 07 NOVEMBER <span class="separator"></span></div>
+						<div class="artist"><i class="icon-mic-1"></i> MARC ANTONY <span class="separator"></span></div>
+						<div class="location"><i class="icon-location-1"></i> MEMPHIS, TN</div>
+						<a class="sold" href="event-single.html">SOLD OUT</a>
+					</li>
+				</ul>
+				<!-- Button SHOW ALL -->
+				<a href="event-list-month.html" class="show-all">SHOW ALL EVENTS</a>	
+			</nav>
+		</div>
+	</div>
+
+	<!-- Tweet -->
+	<div class="tweet">
+		<div class="hover-layer">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+						<div id="tweetCarousel" class="carousel slide">
+						  	<!-- Carousel items -->
+						  	<div class="carousel-inner">
+						    	<div class="item active">
+						    		<i class="icon-twitter"></i>
+						    		<p>“HERO IS THE TRUTH!! Hard RoQ3 been doin his **** since Yelawolf and Tip smashed that remix! Sign them niggas #hardroq3 #thahydrox #hero”</p>
+						    		<div class="line"></div>
+						    		<span class="date">17 hours ago</span>
+						    	</div>
+						    	<div class="item">
+						    		<i class="icon-twitter"></i>
+						    		<p>"This is definitely one of the doper tracks we have posted as of late, and we are glad that we had the pleasure of it being submitted. This is the newest Slapper of The Year produced by Superstaar Beats! Turn Up The Knob!"</p>
+						    		<div class="line"></div>
+						    		<span class="date">17 hours ago</span>
+						    	</div>
+						  	</div>
+						  	<!-- Controls -->
+							<a class="left carousel-control" href="#tweetCarousel" role="button" data-slide="prev">
+								<span class="glyphicon glyphicon-chevron-left"></span>
+							</a>
+							<a class="right carousel-control" href="#tweetCarousel" role="button" data-slide="next">
+							  	<span class="glyphicon glyphicon-chevron-right"></span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Latest news BLOG -->
+	<div class="latest-blog">
+		<div class="container">
+			<i class="icon-chat-1"></i>
+			<h3>Latest news of <span class="colored">blog</span></h3>
+		</div>
+	</div>
+
+	<!-- Blog -->
+	<div id="blog-masonry" class="container blog">
+		<div class="masonry-trigger"></div>
+
+		<div id="content" class="row">
+			
+			<div class="col-sm-6 col-md-4 blog-post">
+				<a href="blog-single.html" class="img">
+					<img class="img-responsive" src="assets/img/blog/hardroq32.jpg" alt="Post IMG">
+				</a>
+				<div class="content">
+					<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur rhoncus nisi id.</h4>
+					<ul class="info">
+						<li><span class="icon-user"></span>Tilvar Claudiu</li>
+						<li><span class="icon-calendar"></span>25 aprilie 2014</li>
+						<li><span class="icon-chat-1"></span>8 comments</li>
+					</ul>
+					<hr>
+					<p>Vivamus eu dui eget turpis iaculis facilisis vitae id felis. Phasellus feugiat, nisi nec interdum bibendum, enim arcu dapibus sapien, sit amet suscipit ante mauris et arcu. Interdum et malesuada curabitur nisi amet ret.</p>
+					<a href="blog-single.html" class="read-more">READ MORE</a>
+				</div>
+				<div class="social">
+					<div class="likes"><i class="icon-heart"></i> 7</div>
+					<div class="social-icons">
+						<i class="icon-twitter"></i>
+						<i class="icon-facebook"></i>
+						<i class="icon-gplus"></i>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-sm-6 col-md-4 blog-post">
+				<a href="blog-single.html" class="img">
+					<img class="img-responsive" src="assets/img/blog/hydroxGrey.jpg" alt="Post IMG">
+				</a>
+				<div class="content">
+					<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur rhoncus nisi id.</h4>
+					<ul class="info">
+						<li><span class="icon-user"></span>Tilvar Claudiu</li>
+						<li><span class="icon-calendar"></span>25 aprilie 2014</li>
+						<li><span class="icon-chat-1"></span>8 comments</li>
+					</ul>
+					<hr>
+					<p>Hard RoQ is a Texas raised rapper, producer, singer and song writer that posseses a versatile style reflecting his own diverse upbringing. RoQ has a unique ability to enhance any genre of music, whether it be Hip-Hop, Trap, Dub-Step, Pop, Rock & Roll, R&B or any other number of genres. With a lyrical flow and a passion for music Hard RoQ can turn any song into hit. Growing up in Texas, RoQ was influenced by the lyrical styles of entertainers such as 2-Pac, Bone-Thugs-N-Harmony, Busta Rhymes, Twista, T.I., Bun B, Paul Wall, Ludacris and many many other various influential rappers. By listening and studying his own material RoQ has developed a rare style of his own, combining a unique sound that no one in the music industry contains, yet adding a different twist to the Rap game. Hard RoQ's music always delivers a strong beat, marketable tune and an engulfing presence that will have you off your seats! RoQ can engineer, produce, sing, write, rap, and always delivers a great performance...</p>
+					<a href="blog-single.html" class="read-more">READ MORE</a>
+				</div>
+				<div class="social">
+					<div class="likes"><i class="icon-heart"></i> 7</div>
+					<div class="social-icons">
+						<i class="icon-twitter"></i>
+						<i class="icon-facebook"></i>
+						<i class="icon-gplus"></i>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-sm-6 col-md-4 blog-post">
+				<a href="blog-single.html" class="img">
+					<img class="img-responsive" src="assets/img/blog/post-7.jpg" alt="Post IMG">
+				</a>
+				<div class="content">
+					<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur rhoncus nisi id.</h4>
+					<ul class="info">
+						<li><span class="icon-user"></span>Tilvar Claudiu</li>
+						<li><span class="icon-calendar"></span>25 aprilie 2014</li>
+						<li><span class="icon-chat-1"></span>8 comments</li>
+					</ul>
+					<hr>
+					<p>Hard RoQ is a Texas raised rapper, producer, singer and song writer that posseses a versatile style reflecting his own diverse upbringing. RoQ has a unique ability to enhance any genre of music, whether it be Hip-Hop, Trap, Dub-Step, Pop, Rock & Roll, R&B or any other number of genres. With a lyrical flow and a passion for music Hard RoQ can turn any song into hit. Growing up in Texas, RoQ was influenced by the lyrical styles of entertainers such as 2-Pac, Bone-Thugs-N-Harmony, Busta Rhymes, Twista, T.I., Bun B, Paul Wall, Ludacris and many many other various influential rappers. By listening and studying his own material RoQ has developed a rare style of his own, combining a unique sound that no one in the music industry contains, yet adding a different twist to the Rap game. Hard RoQ's music always delivers a strong beat, marketable tune and an engulfing presence that will have you off your seats! RoQ can engineer, produce, sing, write, rap, and always delivers a great performance...</p>
+					<a href="blog-single.html" class="read-more">READ MORE</a>
+				</div>
+				<div class="social">
+					<div class="likes"><i class="icon-heart"></i> 7</div>
+					<div class="social-icons">
+						<i class="icon-twitter"></i>
+						<i class="icon-facebook"></i>
+						<i class="icon-gplus"></i>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-sm-6 col-md-4 blog-post">
+				<a href="blog-single.html" class="img">
+					<img class="img-responsive" src="assets/img/blog/post-3.jpg" alt="Post IMG">
+				</a>
+				<div class="content">
+					<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur rhoncus nisi id.</h4>
+					<ul class="info">
+						<li><span class="icon-user"></span>Tilvar Claudiu</li>
+						<li><span class="icon-calendar"></span>25 aprilie 2014</li>
+						<li><span class="icon-chat-1"></span>8 comments</li>
+					</ul>
+					<hr>
+					<p>Hard RoQ is a Texas raised rapper, producer, singer and song writer that posseses a versatile style reflecting his own diverse upbringing. RoQ has a unique ability to enhance any genre of music, whether it be Hip-Hop, Trap, Dub-Step, Pop, Rock & Roll, R&B or any other number of genres. With a lyrical flow and a passion for music Hard RoQ can turn any song into hit. Growing up in Texas, RoQ was influenced by the lyrical styles of entertainers such as 2-Pac, Bone-Thugs-N-Harmony, Busta Rhymes, Twista, T.I., Bun B, Paul Wall, Ludacris and many many other various influential rappers. By listening and studying his own material RoQ has developed a rare style of his own, combining a unique sound that no one in the music industry contains, yet adding a different twist to the Rap game. Hard RoQ's music always delivers a strong beat, marketable tune and an engulfing presence that will have you off your seats! RoQ can engineer, produce, sing, write, rap, and always delivers a great performance...</p>
+					<a href="blog-single.html" class="read-more">READ MORE</a>
+				</div>
+				<div class="social">
+					<div class="likes"><i class="icon-heart"></i> 7</div>
+					<div class="social-icons">
+						<i class="icon-twitter"></i>
+						<i class="icon-facebook"></i>
+						<i class="icon-gplus"></i>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-sm-6 col-md-4 blog-post">
+				<a href="blog-single.html" class="img">
+					<img class="img-responsive" src="assets/img/blog/post-5.jpg" alt="Post IMG">
+				</a>
+				<div class="content">
+					<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur rhoncus nisi id.</h4>
+					<ul class="info">
+						<li><span class="icon-user"></span>Tilvar Claudiu</li>
+						<li><span class="icon-calendar"></span>25 aprilie 2014</li>
+						<li><span class="icon-chat-1"></span>8 comments</li>
+					</ul>
+					<hr>
+					<p>Hard RoQ is a Texas raised rapper, producer, singer and song writer that posseses a versatile style reflecting his own diverse upbringing. RoQ has a unique ability to enhance any genre of music, whether it be Hip-Hop, Trap, Dub-Step, Pop, Rock & Roll, R&B or any other number of genres. With a lyrical flow and a passion for music Hard RoQ can turn any song into hit. Growing up in Texas, RoQ was influenced by the lyrical styles of entertainers such as 2-Pac, Bone-Thugs-N-Harmony, Busta Rhymes, Twista, T.I., Bun B, Paul Wall, Ludacris and many many other various influential rappers. By listening and studying his own material RoQ has developed a rare style of his own, combining a unique sound that no one in the music industry contains, yet adding a different twist to the Rap game. Hard RoQ's music always delivers a strong beat, marketable tune and an engulfing presence that will have you off your seats! RoQ can engineer, produce, sing, write, rap, and always delivers a great performance...</p>
+					<a href="blog-single.html" class="read-more">READ MORE</a>
+				</div>
+				<div class="social">
+					<div class="likes"><i class="icon-heart"></i> 7</div>
+					<div class="social-icons">
+						<i class="icon-twitter"></i>
+						<i class="icon-facebook"></i>
+						<i class="icon-gplus"></i>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-sm-6 col-md-4 blog-post">
+				<a href="blog-single.html" class="img">
+					<img class="img-responsive" src="assets/img/blog/post-2.jpg" alt="Post IMG">
+				</a>
+				<div class="content">
+					<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur rhoncus nisi id.</h4>
+					<ul class="info">
+						<li><span class="icon-user"></span>Tilvar Claudiu</li>
+						<li><span class="icon-calendar"></span>25 aprilie 2014</li>
+						<li><span class="icon-chat-1"></span>8 comments</li>
+					</ul>
+					<hr>
+					<p>Hard RoQ is a Texas raised rapper, producer, singer and song writer that posseses a versatile style reflecting his own diverse upbringing. RoQ has a unique ability to enhance any genre of music, whether it be Hip-Hop, Trap, Dub-Step, Pop, Rock & Roll, R&B or any other number of genres. With a lyrical flow and a passion for music Hard RoQ can turn any song into hit. Growing up in Texas, RoQ was influenced by the lyrical styles of entertainers such as 2-Pac, Bone-Thugs-N-Harmony, Busta Rhymes, Twista, T.I., Bun B, Paul Wall, Ludacris and many many other various influential rappers. By listening and studying his own material RoQ has developed a rare style of his own, combining a unique sound that no one in the music industry contains, yet adding a different twist to the Rap game. Hard RoQ's music always delivers a strong beat, marketable tune and an engulfing presence that will have you off your seats! RoQ can engineer, produce, sing, write, rap, and always delivers a great performance...</p>
+					<a href="blog-single.html" class="read-more">READ MORE</a>
+				</div>
+				<div class="social">
+					<div class="likes"><i class="icon-heart"></i> 7</div>
+					<div class="social-icons">
+						<i class="icon-twitter"></i>
+						<i class="icon-facebook"></i>
+						<i class="icon-gplus"></i>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- Line Separator -->
+	<div class="container">
+		<div class="col-sm-12" style="position: relative; height: 2px; margin-top: 70px;">
+			<div class="col-xs-12 line-separator"></div>
+		</div>
+	</div>
+
+	<!-- Gallery -->
+	<div class="container gallery">
+		<div class="row">
+			<div class="col-sm-12 col-md-4 info">
+				<i class="large-icon flaticon-small26"></i>
+				<h2>Events <span class="colored">Gallery</span></h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis consequat magna quis urna convallis suscipit. Nulla facilisi. Phasellus varius vitae diam ultrices lacinia augue.</p>
+				<a href="gallery.html" class="view-all">- VIEW ALL -</a>
+			</div>
+			<div class="col-sm-12 col-md-8">
+				<div class="row">
+					<div class="col-sm-6 event">
+						<div class="cover">
+							<img src="assets/img/gallery/event-gallery-1.jpg" alt="Event 1" class="img-responsive">
+							<a class="icon-picture" href="assets/img/gallery/event-gallery-1.1.jpg" data-lightbox="image-1" data-title="Event 1"> Photo Event</a>
+						</div>
+					</div>
+					<div class="col-sm-6 event">
+						<div class="cover">
+							<img src="assets/img/gallery/event-gallery-2.jpg" alt="Event 2" class="img-responsive">
+							<a class="icon-picture" href="assets/img/gallery/event-gallery-2.1.jpg" data-lightbox="image-2" data-title="Event 2"> Photo Event</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container clearfix" style="height: 70px;"></div>
+	<!-- Footer -->
+	<div class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-3 contact">
+					<h5>Contact info</h5>
+					<p>Nemo enim ipsam voluptatem quia sit aut odit aut fugit dolor sit amtet passentiquer.</p>
+					<ul class="adress">
+						<li>
+							<span class="heading clearfix">Adress:</span>
+							102580 Santa Monica BLVD Los Angeles
+						</li>
+						<li>
+							<span class="heading clearfix">Phone numbers:</span>
+							+3 045 224 33 12, +3 045 330 40 44
+						</li>
+						<li>
+							<span class="heading clearfix">Email:</span>
+							office@elephant-themes.com
+						</li>
+					</ul>
+					<div class="social-media">	
+						<ul>
+							<li><a href="#"><i class="icon-twitter"></i></a></li>
+							<li><a href="#"><i class="icon-facebook"></i></a></li>
+							<li><a href="#"><i class="icon-gplus"></i></a></li>
+							<li><a href="#"><i class="icon-dribbble"></i></a></li>
+							<li><a href="#"><i class="icon-vimeo"></i></a></li>
+							<li><a href="#"><i class="icon-twitter"></i></a></li>
+							<li><a href="#"><i class="icon-facebook"></i></a></li>
+							<li><a href="#"><i class="icon-gplus"></i></a></li>
+							<li><a href="#"><i class="icon-dribbble"></i></a></li>
+						</ul>
+					</div>	
+				</div>
+				<div class="col-sm-3 latest-works">
+					<h5>My latest works</h5>
+					<ul>
+						<li>
+							<a href="">
+								<i class="icon-picture"></i>
+								<span class="title">Wheel of time</span>
+								<span class="date">Aprilie 25, 2014</span>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<i class="icon-picture"></i>
+								<span class="title">The soulforged</span>
+								<span class="date">Aprilie 25, 2014</span>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<i class="icon-picture"></i>
+								<span class="title">Mordred song</span>
+								<span class="date">Aprilie 25, 2014</span>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<i class="icon-picture"></i>
+								<span class="title">Creative web</span>
+								<span class="date">Aprilie 25, 2014</span>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<i class="icon-picture"></i>
+								<span class="title">Wordpress</span>
+								<span class="date">Aprilie 25, 2014</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-sm-3 tag-cloud clearfix">
+					<h5>Tag cloud</h5>
+					<p>Nemo enim ipsam voluptatem quia sit aut odit aut fugit dolor sit amtet.</p>
+					<ul>
+						<li><a href="#">web-design</a></li>
+						<li><a href="#">video</a></li>
+						<li><a href="#">marketing</a></li>
+						<li><a href="#">graphic design</a></li>
+						<li><a href="#">wordpress</a></li>
+						<li><a href="#">seo</a></li>
+						<li><a href="#">blog layout</a></li>
+						<li><a href="#">jquery</a></li>
+						<li><a href="#">developer</a></li>
+						<li><a href="#">portfolio</a></li>
+						<li><a href="#">bootstrap</a></li>
+						<li><a href="#">bonuses</a></li>
+						<li><a href="#">pricing table</a></li>
+						<li><a href="#">testimonial</a></li>
+						<li><a href="#">blog</a></li>
+						<li><a href="#">smoking</a></li>
+						<li><a href="#">php</a></li>
+						<li><a href="#">revolution slider</a></li>
+						<li><a href="#">royal slider</a></li>
+					</ul>
+				</div>
+				<div class="col-sm-3 about-footer">
+					<div class="about-footer-container">
+						<h5>About your company</h5>
+						<p>Fusce sed nibh porttitor, scelerisque elit id, pretium justo. Integer venenatis tempus nisi non varius. Sed dui enim, lobortis et tempor.</p>
+						<p>Pellentesque ligula tellus, elementum sit amet purus at, pharetra faucibus erat. <span class="highlight">Sed fermentum accumsan ipsum, non vestibulum.</span></p>
+						<img src="assets/img/elements/footer-thumb.png" alt="About pic">
+						<div class="services">
+							<p>Services: we can offer best services, <a href="#">click for more here</a></p>
+						</div>
+						<div class="services">
+							<p>Portfolio: watch awsome latest works, <a href="#">more here</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- jQuery -->
+	<!-- <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=true"></script>
+	<script type="text/javascript" src="assets/js/google.map.js"></script> -->
+	<script type="text/javascript" src="assets/js/smooth-scroll.js"></script>
+	<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="assets/js/respond.min.js"></script>
+	<!-- <script type="text/javascript" src="assets/js/jquery.inview.js"></script> -->
+	<script type="text/javascript" src="assets/js/jquery.isotope.min.js"></script>
+	<script type="text/javascript" src="assets/js/masonry.js"></script>
+	<script type="text/javascript" src="assets/js/lightbox.min.js"></script>
+	<script type="text/javascript" src="assets/js/js.js"></script>
+
+	<!-- jQuery REVOLUTION Slider  -->
+	<script type="text/javascript" src="assets/rs-plugin/js/jquery.themepunch.plugins.min.js"></script>
+	<script type="text/javascript" src="assets/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+	<script type="text/javascript"> 
+		jQuery(document).ready(function($) {
+			"use strict";
+
+			jQuery('.tp-banner').show().revolution(
+			{
+				delay:4000,
+				startwidth:1920,
+				startheight:783,
+				hideThumbs:100,
+				fullWidth:"off",
+				fullScreen:"on",
+				fullScreenOffsetContainer: ".navbar-default, .player",
+				navigationStyle: "off",
+				shadow: 0,
+				autoHeight:"off",						
+				forceFullWidth:"off",						
+			});
+		});
+	</script>
+
+	<!-- jPlayer -->
+	<script type="text/javascript" src="assets/jplayer/jquery.jplayer.min.js"></script>
+	<script type="text/javascript" src="assets/jplayer/jplayer.playlist.min.js"></script>
+	<script type="text/javascript">
+	    $(document).ready(function(){
+
+			new jPlayerPlaylist({
+				jPlayer: "#jquery_jplayer_1",
+				
+				cssSelectorAncestor: "#jp_container_1"
+			}, [
+				{
+					title:"Cro Magnon Man",
+					mp3:"http://www.jplayer.org/audio/mp3/TSP-01-Cro_magnon_man.mp3",
+					oga:"http://www.jplayer.org/audio/ogg/TSP-01-Cro_magnon_man.ogg"
+				},
+				{
+					title:"Your Face",
+					mp3:"http://www.jplayer.org/audio/mp3/TSP-05-Your_face.mp3",
+					oga:"http://www.jplayer.org/audio/ogg/TSP-05-Your_face.ogg"
+				},
+				{
+					title:"Cyber Sonnet",
+					mp3:"http://www.jplayer.org/audio/mp3/TSP-07-Cybersonnet.mp3",
+					oga:"http://www.jplayer.org/audio/ogg/TSP-07-Cybersonnet.ogg"
+				},
+			], {
+				swfPath: "assets/jplayer",
+				supplied: "oga, mp3",
+				wmode: "window",
+				smoothPlayBar: false,
+				keyEnabled: true
+			});
+		});
+	</script>
+</body>
+</html>
